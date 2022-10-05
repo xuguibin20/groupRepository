@@ -1,0 +1,82 @@
+.calendar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #666;
+  font-size: 14px;
+}
+.err-list {
+  flex: none;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.calendar-header {
+  flex: none;
+  display: flex;
+  padding: 0 7px;
+}
+.calendar-header-col {
+  flex: auto;
+  line-height: 35px;
+  text-align: center;
+}
+.calendar-list {
+  flex: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+.calendar-item {
+  padding-bottom: 15px;
+  margin-bottom: 12px;
+  background-color: #fff;
+}
+.calendar-tit {
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.calendar-row {
+  display: flex;
+  padding: 0 7px;
+}
+.calendar-col {
+  flex: 1 1 0;
+  text-align: center;
+  height: 48px;
+  position: relative;
+}
+.calendar-col-content {
+  line-height: 48px;
+  font-size: 14px;
+}
+.calendar-col-btm {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+  font-size: 10px;
+  color: #00a9f0;
+}
+.calendar-col-range {
+  background-color: #e5f6fd;
+}
+.calendar-col-selected {
+  background-color: #00a9f0;
+  color: #fff;
+}
+.calendar-col-selected .calendar-col-btm {
+  color: #fff;
+}
+.calendar-col-disabled {
+  color: #ccc;
+}
+.calendar-col-disabled .calendar-col-btm {
+  color: #ccc;
+}

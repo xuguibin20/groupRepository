@@ -1,0 +1,107 @@
+{
+    "pages": [
+    	{
+			"path" : "src/tabBar/mainPage/login/login",
+			"style" : {
+				"navigationBarTitleText": "登录",
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+		},
+		{
+			"path" : "src/pages/main/main",
+			"style" : {
+				"navigationBarTitleText": "门户"
+			}
+		},
+		{
+			"path" : "src/pages/menu/all-menu",
+			"style" : {
+				"navigationBarTitleText": "菜单"
+			}
+		},
+		{
+			"path" : "src/pages/dynamicview/h5",
+			"style" : {
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"scrollIndicator": "none",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue7db",
+							"fontSrc": "/static/iconfont/navigation-menu.ttf",
+							"fontSize": "30rpx",
+							"right": "40upx",
+							"width": "50px"
+						}]
+					}
+				}
+			}
+		},
+		{
+            "path" : "src/pages/main/my",
+            "style" : {
+				"navigationBarTitleText": "我的"
+			}
+        },
+        {
+			"path": "src/pages/tflowCenter/index",
+			"style": {
+				"navigationBarTitleText": "任务列表"
+			}
+		},
+        {
+		    "path": "src/pages/list/list",
+		    "style": {
+		        "navigationBarTitleText": "查询列表"
+		    }
+		}
+		// 天鸿实体选择控件
+		,{
+			"path": "node_modules/necp.tswan.mobile.components/packages/bizcontrol/ecp-genentity-select/ecp-genentity-select-list",
+			"style": {
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "完成",
+							"fontSize": "30rpx",
+							"right": "40upx",
+							"width": "50px"
+						}]
+					}
+				}
+			}
+		}
+    ],
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "uni-app",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    },
+    "tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "src/pages/main/main",
+				"iconPath": "/static/components.png",
+				"selectedIconPath": "/static/components.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "src/pages/tflowCenter/index",
+				"iconPath": "static/template.png",
+				"selectedIconPath": "static/templateHL.png",
+				"text": "待办"
+			}, {
+				"pagePath": "src/pages/main/my",
+				"iconPath": "static/my.png",
+				"selectedIconPath": "static/my.png",
+				"text": "我的"
+			}
+		]
+	}
+}

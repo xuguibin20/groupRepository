@@ -1,0 +1,154 @@
+[
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "9999",
+    "dh": "9999",
+    "dwqx": "0",
+    "mc": "远光软件集团公司",
+    "modelState": 1
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "0000",
+    "dh": "0000",
+    "dwqx": "0",
+    "mc": "远光软件合并",
+    "modelState": 1,
+    "pdwdh": "9999"
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "0300",
+    "dh": "0300",
+    "dwqx": "0",
+    "mc": "远光软件集团本部",
+    "modelState": 1,
+    "pdwdh": "9999"
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "0301",
+    "dh": "0301",
+    "dwqx": "0",
+    "mc": "远光软件北京分公司",
+    "modelState": 1,
+    "pdwdh": "9999"
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "0302",
+    "dh": "0302",
+    "dwqx": "0",
+    "mc": "远光软件湖南子公司",
+    "modelState": 1,
+    "pdwdh": "9999"
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "030201",
+    "dh": "0303",
+    "dwqx": "0",
+    "mc": "远光软件湖南长沙分公司",
+    "modelState": 1,
+    "pdwdh": "0302"
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "030202",
+    "dh": "0304",
+    "dwqx": "0",
+    "mc": "远光软件湖南邵阳分公司（中间单位）",
+    "modelState": 1,
+    "pdwdh": "0302"
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "030203",
+    "dh": "0305",
+    "dwqx": "0",
+    "mc": "远光软件湖南岳阳分公司",
+    "modelState": 1,
+    "pdwdh": "0302"
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "0303",
+    "dh": "9900",
+    "dwqx": "0",
+    "mc": "远光软件上海公司",
+    "modelState": 1,
+    "pdwdh": "9999"
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "030301",
+    "dh": "9901",
+    "dwqx": "0",
+    "mc": "远光软件上海分公司",
+    "modelState": 1,
+    "pdwdh": "9900"
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "03030101",
+    "dh": "9902",
+    "dwqx": "0",
+    "mc": "远光软件上海浦东子公司",
+    "modelState": 1,
+    "pdwdh": "9900"
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "0401",
+    "dh": "9903",
+    "dwqx": "0",
+    "mc": "远光软件天津总公司",
+    "modelState": 1,
+    "pdwdh": "9999"
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "040101",
+    "dh": "9904",
+    "dwqx": "0",
+    "mc": "远光软件天津西青区分公司（底层单位）",
+    "modelState": 1,
+    "pdwdh": "9903"
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "0402",
+    "dh": "9905",
+    "dwqx": "0",
+    "mc": "远光软件天津津南区分公司（中间单位）",
+    "modelState": 1,
+    "pdwdh": "9903"
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "040201",
+    "dh": "9908",
+    "dwqx": "0",
+    "mc": "远光软件天津高新区",
+    "modelState": 1,
+    "pdwdh": "9905"
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "0403",
+    "dh": "9906",
+    "dwqx": "0",
+    "mc": "远光软件天津本部分公司",
+    "modelState": 1,
+    "pdwdh": "9903"
+  },
+  {
+    "jcls": "com.ygsoft.ecp.app.mdm.service.basicorg.EcpLoginCompanyVO",
+    "compCode": "0404",
+    "dh": "9907",
+    "dwqx": "0",
+    "mc": "远光软件天津共享服务中心",
+    "modelState": 1,
+    "pdwdh": "9903"
+  }
+]

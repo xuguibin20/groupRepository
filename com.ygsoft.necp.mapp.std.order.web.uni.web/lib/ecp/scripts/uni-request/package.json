@@ -1,0 +1,92 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "uni-request",
+        "scope": null,
+        "escapedName": "uni-request",
+        "name": "uni-request",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\guweijun\\Documents\\HBuilderProjects\\Demo"
+    ]
+  ],
+  "_from": "uni-request@latest",
+  "_hasShrinkwrap": false,
+  "_id": "uni-request@1.0.2",
+  "_inCache": true,
+  "_location": "/uni-request",
+  "_nodeVersion": "10.8.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/uni-request_1.0.2_1547687046849_0.21744520669861078"
+  },
+  "_npmUser": {
+    "name": "tzone",
+    "email": "zzqzziavip@163.com"
+  },
+  "_npmVersion": "6.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "uni-request",
+    "scope": null,
+    "escapedName": "uni-request",
+    "name": "uni-request",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/uni-request/-/uni-request-1.0.2.tgz",
+  "_shasum": "aa276b1e86d5822e4a747a48464892274487dc52",
+  "_shrinkwrap": null,
+  "_spec": "uni-request",
+  "_where": "C:\\Users\\guweijun\\Documents\\HBuilderProjects\\Demo",
+  "author": {
+    "name": "tzone"
+  },
+  "bugs": {
+    "url": "https://github.com/QzeroQ/uni-request/issues"
+  },
+  "dependencies": {},
+  "description": "基于Promise封装uni-app的request方法,h5和小程序均可使用",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-NeenvswBYHMS2HoxedKapz5JEJYt31VAc3YTSdVvjGz/8T3LpZxRL21fQygj5fzLTALDZaDlv5pD168lJhlOww==",
+    "shasum": "aa276b1e86d5822e4a747a48464892274487dc52",
+    "tarball": "https://registry.npmjs.org/uni-request/-/uni-request-1.0.2.tgz",
+    "fileCount": 9,
+    "unpackedSize": 10011,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcP9SHCRA9TVsSAnZWagAA06kP/jZMNVmvjbuVEQsgVN6T\nY+juQK1tINUTY8Tp522VetCgSwYalnjCrf6k5GeewsyoFULcUnkRxGBLmqDo\n48FhOKM0fRUf4y6yWb0d2vbOgsLBEUWrIT0FNjHlCqcaE82WVbL5N6ifXyLh\nLy4nVe7wxqc4Wzk9F+b2jQhRaUSPPFmKsjO5CbgrLAC+ZkGxifwwwKPazuIc\nGrZlM2da45JLrSiSecsKe0jOfBg041Wi4XIgwzIxFwGBhi5ClXkiCnfpB59P\nTN40xCfa4TM5PgLrp7B5gNIWNMLM9hWmIKy73axyC677FcSkRB5/jm6dObov\nVeXLJg3qiyKeu6fAMcXdHmh3OfZOki4N/lQEYATkL12EbHXCJirlxkqEquUg\ndblZYJTp1YG8j7kJ4JkicUe9wRCkoRta4Q/mupLANdF5bzsxRjkFNFqULX1b\nquyBml5T6oO0RjvoW7+9x0hMumKuKs936q9Wz9SV6Wp5S+8BJX27vbsgLCPL\n5EKDI8WWG099908ZrLXj8udB4lLcFpEJjqpm4XO6GqXlymvHPixwZC/xYRUB\nGlPfy5PsqzO0qUiegOduxEqVmUCdEZlFG9Q9j4hNyNJaOgNQ9m1QRttMj0QY\nGgIVSaPEc96Gr7NgVRS4MvgWaHslt3RZeXhEDeVUXH7fbxKEqDkUuS5WlAsD\nNWsz\r\n=Ax6n\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "homepage": "https://github.com/QzeroQ/uni-request#readme",
+  "keywords": [
+    "uni-app",
+    "wechat",
+    "promise",
+    "htpp",
+    "微信小程序"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "tzone",
+      "email": "zzqzziavip@163.com"
+    }
+  ],
+  "name": "uni-request",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QzeroQ/uni-request.git"
+  },
+  "version": "1.0.2"
+}

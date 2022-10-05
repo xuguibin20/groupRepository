@@ -1,0 +1,316 @@
+
+//引入标准风格色值表
+@import 'colorstable.scss';
+
+// 顶部菜单
+.topmenu{
+	height: 46px;
+	overflow: hidden;
+	.el-menu{
+		background: transparent;
+		border-bottom: 0;
+	}
+	.el-menu--horizontal{
+		.el-menu-item,
+		.el-submenu .el-submenu__title{
+			color: rgba(255,255,255,.8);
+			border-bottom: 0;
+			height: 46px;
+			line-height: 46px;
+		}
+		.el-menu-item.is-active,
+		.el-menu-item:not(.is-disabled):focus{
+			color: rgba(255,255,255,1);
+			font-weight: bold;
+			background: rgba(255,255,255,.1);
+			border-bottom-color: transparent;
+		}
+		.el-menu-item:not(.is-disabled):hover,
+		.el-submenu .el-submenu__title:hover{
+			color: rgba(255,255,255,.8);
+			background: rgba(255,255,255,.05);
+			border-bottom-color: transparent;
+		}
+		.el-submenu.is-active{
+			background: rgba(255,255,255,.1);
+			.el-submenu__title{
+				color: rgba(255, 255, 255, 0.8);
+				border-bottom:none;
+			}
+		}
+	}
+.el-dropdown-menu__item--divided:before{
+	color: rgba(255,255,255,.8);
+	background: transparent;
+}
+.icon-home{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background: url('./img/icon-home.png') no-repeat;
+	background-size: 100% 100%;
+	vertical-align: middle;
+}
+
+}
+// 主页结构
+	.container {
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		width: 100%;
+		.header {
+			min-width: 1270px;
+			height: 46px;
+			line-height: 46px;
+			padding-right: 10px;
+			background: $color-primary;
+			color:#fff;
+			.userinfo {
+				text-align: right;
+				padding-right: 10px;
+				float: right;
+				.userinfo-inner {
+					cursor: pointer;
+					color:#fff;
+					img {
+						width: 30px;
+						height: 30px;
+						border-radius: 20px;
+						margin: 5px 0px 0px 0px;
+						float: right;
+					}
+				}
+			}
+			.logo {
+				width:250px;
+				height:46px;
+				font-size: 18px;
+				padding-left:10px;
+				.logoimg {
+					width: 34px;
+					height: 34px;
+					float: left;
+					margin: 5px 10px 0px 0px;
+					background: url('./img/logo.png') no-repeat;
+				}
+				.txt {
+					color:#fff;
+				}
+			}
+			.logo-width{
+				width:250px;
+			}
+			.logo-collapse-width{
+				width:60px;
+			}
+			.tools{
+				padding:0 10px;
+				line-height: 46px;
+				cursor: pointer;
+				display: none;
+			}
+			.el-dropdown{
+				cursor: pointer;
+				color: #fff;
+				line-height: 23px;
+			}
+		}
+		.main {
+			display: flex;
+			position: absolute;
+			top: 46px;
+			bottom: 0px;
+			height: calc(100vh - 46px);
+			overflow: hidden;
+			aside {
+				flex:0 0 249px;
+				width: 249px;
+				border-right:solid 1px #e6e6e6;
+				background: $color-grayF2;
+				.el-menu{
+					border-right: 0;
+					background: $color-grayF2;
+				}
+				.collapsed{
+					width:59px;
+					.item{
+						position: relative;
+					}
+					.submenu{
+						position:absolute;
+						top:0px;
+						left:60px;
+						z-index:99999;
+						height:auto;
+						display:none;
+						box-shadow:0px 2px 4px #ccc;
+					}
+
+				}
+				.menu-search-tool{
+					padding:10px 0 10px 10px;
+					.el-input{
+						width: 185px;
+						display: inline-block;
+					}
+					.tools{
+						width: 28px;
+						height: 28px;
+						line-height: 28px;
+						margin-left: 10px;
+						text-align: center;
+						display: inline-block;
+						cursor: pointer;
+					}
+				}
+				.menu-search-tool.no{
+					padding:10px 0;
+					.el-input{
+						display: none;
+					}
+					.tools{
+						margin-left: 0;
+						height: 100%;
+						width: 100%;
+					}
+				}
+			}
+			.menu-collapsed{
+				flex:0 0 60px;
+				width: 60px;
+			}
+			.menu-expanded{
+				flex:0 0 249px;
+				width: 249px;
+				overflow-y: auto;
+			}
+			.content{
+			flex:1;
+			width: 0;//横向需要滚动条的话
+			height: 0;//纵向需要滚动条的话
+			.content-container {
+				overflow: auto;
+				padding:0 10px;
+				// height: calc(100vh - 105);
+				// height: 100%;
+				.breadcrumb-container {
+					.title {
+						width: 200px;
+						float: left;
+						color: #475669;
+					}
+					.breadcrumb-inner {
+						float: right;
+					}
+				}
+				.content-wrapper {
+					padding-bottom:10px;
+					overflow: hidden;
+				}
+				.grid-content{//最小宽度显示横向滚动条
+					min-width: 1000px;
+					overflow-x: auto;
+				}
+			}
+			}
+
+		}
+	}
+// .el-submenu [class^=el-icon-]{
+// 	width: auto;
+// }
+
+// 登录页结构
+.loginMain{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 230px;
+    padding-left: 420px;
+    margin: -150px 0 0 -411px;
+    background: #2D54A6;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-clip: padding-box;
+    box-shadow: 0 0 25px #cac6c6;
+    border: 1px solid #eaeaea;
+    // overflow: hidden;
+    &:before{
+      position: absolute;
+      top: 55px;
+      left: 50px;
+      content: '';
+      height: 200px;
+      width: 200px;
+      background: url('./img/dl-bg.png') no-repeat center center;
+      opacity: .6;
+    }
+    .login-logo{
+      position: absolute;
+      top: -48px;
+      left: 10px;
+      line-height: 34px;
+    &:before{
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom:8px;
+      content: '';
+      height: 34px;
+      width: 34px;
+      background: url('./img/logo-dl.png') no-repeat center center;
+      }
+      .text{
+        font-size: 22px;
+        padding-left:10px;
+      }
+    }
+
+    .login-container {
+      position: relative;
+      color: #fff;
+      width: 350px;
+      padding: 64px 0 0 60px;
+      &:before{
+        position: absolute;
+        top: 0;
+        left: -3px;
+        content: '';
+        height: 230px;
+        width: 2px;
+        background: url('./img/dl-line.png') no-repeat center center;
+        opacity: .5;
+      }
+      .el-form-item__label{
+        width: 46px;
+        margin-right: 10px;
+        color: #fff !important;
+        text-align:justify;
+        text-justify:distribute-all-lines;/*ie6-8*/
+        text-align-last:justify;/* ie9*/
+        -moz-text-align-last:justify;/*ff*/
+        -webkit-text-align-last:justify;/*chrome 20+*/
+        &:before{
+          display: none;
+        }
+      }
+      .el-checkbox__input.is-checked + .el-checkbox__label {
+          color: #fff;
+      }
+      .el-button{
+        width: 64px;
+        height: 28px;
+        background:rgba(255,255,255,.2);
+        color: #fff;
+        border: none;
+        &:hover{
+          opacity: .7;
+        }
+      }
+      .btn-mg{
+        margin: 10px 0 0 55px;
+      }
+    }
+  }

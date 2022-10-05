@@ -1,0 +1,83 @@
+.ecp-sidebar {
+	position: relative;
+	height: calc(100vh - var(--window-top) - var(--window-bottom));
+	overflow: hidden;
+}
+
+.ecp-sidebar-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 100%;
+	background-color: #fff;
+	z-index: 998;
+	overflow: hidden;
+	visibility: hidden;
+	transform: translateX(-100%);
+	transition: transform ease-in-out .38s, visibility .38s;
+}
+
+.ecp-sidebar-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .3);
+	z-index: 998;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity ease-in-out .38s, visibility .38s;
+}
+
+.ecp-sidebar-body {
+	height: 100%;
+	overflow: auto;
+	transition: transform ease-in-out .38s;
+}
+
+.ecp-sidebar-touch-area {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 20px;
+}
+
+.ecp-sidebar-right>.ecp-sidebar-content {
+	left: auto;
+	right: 0;
+	transform: translateX(100%);
+}
+
+.ecp-sidebar-right>.ecp-sidebar-touch-area {
+	left: auto;
+	right: 0;
+}
+
+/* 展开 */
+.ecp-sidebar-show {}
+
+.ecp-sidebar-show>.ecp-sidebar-content {
+	transform: translateX(0%);
+	visibility: visible;
+}
+
+.ecp-sidebar-show>.ecp-sidebar-mask {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* 手势 */
+.ecp-sidebar-touch>.ecp-sidebar-content {
+	transition: none;
+}
+
+.ecp-sidebar-touch>.ecp-sidebar-mask {
+	transition: none;
+}
+
+.ecp-sidebar-touch>.ecp-sidebar-body {
+	transition: none;
+}

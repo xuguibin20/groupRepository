@@ -1,0 +1,227 @@
+.calendar-panel {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* #ifdef MP */
+  height: 100%;
+  /* #endif */
+}
+.top-bar {
+  flex: none;
+  display: flex;
+  padding: 36rpx 24rpx;
+}
+.top-bar-body {
+  flex: auto;
+  color: #333;
+  font-size: 32rpx;
+  height: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-bar-close {
+  flex: none;
+  width: 32rpx;
+  height: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.err-msg {
+  flex: none;
+}
+.notice-bar {
+  position: absolute;
+  padding: 32rpx;
+  font-size: 28rpx;
+  text-align: center;
+  max-width: 80%;
+  max-height: 30%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #333;
+  border-radius: 20rpx;
+  bottom: 40rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.calc-height {
+  height: 0;
+  overflow: hidden;
+  flex: none;
+}
+.calendar-header {
+  padding: 20rpx 24rpx;
+  background-color: #fafafa;
+  font-size: 20rpx;
+  display: flex;
+  flex: none;
+}
+.calendar-head-item {
+  flex: auto;
+  text-align: center;
+}
+.calendar-head-item-weekend {
+  color: #fb571e;
+}
+.calendar-month-list {
+  flex: auto;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.calendar-month-scroll {
+  height: 100%;
+}
+/* #ifdef H5 */
+.calendar-month-scroll-h5 {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* #endif */
+.calendar-month {
+  padding: 0 24rpx 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+.calendar-month-bar {
+  padding-left: 24rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.calendar-loading {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calendar-loading .icon-loading {
+  flex: none;
+  /* #ifndef MP-ALIPAY */
+  animation: loading 2s linear infinite;
+  /* #endif */
+}
+/* #ifndef MP-ALIPAY */
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* #endif */
+.calendar-month-title {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 20rpx;
+  height: 60rpx;
+  flex: none;
+  box-sizing: border-box;
+}
+.calendar-week {
+  flex: none;
+  display: flex;
+}
+.calendar-day-placehold {
+  flex: auto;
+}
+.calendar-day {
+  flex: none;
+  width: 14.28%;
+  box-sizing: border-box;
+  padding: 8rpx;
+}
+.calendar-day-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32rpx;
+}
+.calendar-day-header-jcr {
+  justify-content: flex-end;
+}
+.calendar-day-header-body {
+  flex: none;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  font-size: 16rpx;
+}
+.calendar-day-header-footer {
+  flex: none;
+  height: 32rpx;
+  width: 32rpx;
+  border-radius: 6rpx;
+  color: #227ad7;
+  border: 1px solid #227AD7;
+  margin-left: 6rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16rpx;
+}
+.calendar-day-body {
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 32rpx;
+}
+.calendar-day-footer {
+  height: 32rpx;
+  font-size: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calendar-day-weekend .calendar-day-body {
+  color: #FB571E;
+}
+.calendar-day-disable .calendar-day-body {
+  color: #999;
+}
+.calendar-day-lg .calendar-day-body {
+  font-size: 36rpx;
+}
+.calendar-day-selected {
+  background-color: #e9f2fb;
+}
+.calendar-day-start,
+.calendar-day-end {
+  background-color: #227AD7;
+}
+.calendar-day-start .calendar-day-header-body,
+.calendar-day-end .calendar-day-header-body,
+.calendar-day-start .calendar-day-header-footer,
+.calendar-day-end .calendar-day-header-footer,
+.calendar-day-start .calendar-day-body,
+.calendar-day-end .calendar-day-body,
+.calendar-day-start .calendar-day-footer,
+.calendar-day-end .calendar-day-footer {
+  color: #fff;
+}
+.calendar-day-start .calendar-day-header-footer,
+.calendar-day-end .calendar-day-header-footer {
+  border-color: #FFFFFF;
+}
+.calendar-day-end {
+  border-radius: 0 8rpx 8rpx 0;
+}
+.calendar-day-hasend {
+  border-radius: 8rpx 0 0 8rpx;
+}

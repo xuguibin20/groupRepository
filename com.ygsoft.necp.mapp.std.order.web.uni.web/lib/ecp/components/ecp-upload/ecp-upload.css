@@ -1,0 +1,74 @@
+.img-list-wrap {
+  overflow: hidden;
+}
+.img-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20rpx;
+  margin-bottom: -20rpx;
+}
+.img-item {
+  box-sizing: border-box;
+  flex: 0 1 auto;
+  padding-right: 20rpx;
+  padding-bottom: 20rpx;
+  width: 33.33333333%;
+  display: flex;
+}
+.img-item:after {
+  content: "";
+  flex: 0 0 0px;
+  padding-bottom: 100%;
+}
+.img-item .img-wrap {
+  flex: 1 0 0px;
+  position: relative;
+}
+.img-item .img {
+  width: 100%;
+  height: 100%;
+}
+.img-item .btn-add {
+  flex: 1 0 0px;
+  border: 1px solid #C8C7CC;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.img-item .btn-del {
+  position: absolute;
+  right: 10rpx;
+  top: 8rpx;
+  background-color: #DD524D;
+  border-radius: 32px;
+  padding: 2px;
+}
+.action-list {
+  border-radius: 10rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 20rpx;
+}
+.action-list .action-item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 40rpx;
+}
+.action-list .action-item .body {
+  flex: auto;
+  color: #000;
+  font-size: 48rpx;
+}
+.action-list .action-item .icon {
+  flex: none;
+}
+.action-list .action-item + .action-item {
+  border-top: 1px solid #ccc;
+}
+.action-list .btn-close {
+  font-size: 48rpx;
+  justify-content: center;
+  color: #007AFF;
+}

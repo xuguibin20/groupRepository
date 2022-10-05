@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>
+<%=htmlWebpackPlugin.options.title%>
+</title>
+<%for(var i = 0, len = htmlWebpackPlugin.options.ecpsource.length; i < len; i++) {
+var ecpsource = htmlWebpackPlugin.options.ecpsource[i]
+if (/.js$/i.test(ecpsource)) {
+%>
+<script type="text/javascript" src="<%=ecpsource%>"></script>
+<%
+} else if(/.css$/i.test(ecpsource)) {
+%>
+<link rel="stylesheet" href="<%=ecpsource%>">
+<%
+}
+}%>
+</head>
+<body class="app-scss">
+<div id="app"></div>
+</body>
+</html>

@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/**
+ * 标准风格色值表
+ */
+/* 主色和焦点色（含不同的透明度） */
+/* 文字颜色 */
+/* 字重 */
+/* 字号 */
+/* 行高 */
+/* 圆角 */
+/* 外间距 */
+/* 内间距 */
+/* 投影 */
+/* 左侧二级导航 */
+/* 页签 */
+/* 线框 */
+/* 全局工具栏 */
+/* 表格 */
+/* 表单 */
+/* 其他 */
+.topmenu {
+  height: 46px;
+  overflow: hidden; }
+  .topmenu .el-menu {
+    background: transparent;
+    border-bottom: 0; }
+  .topmenu .el-menu--horizontal .el-menu-item,
+  .topmenu .el-menu--horizontal .el-submenu .el-submenu__title {
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 0;
+    height: 46px;
+    line-height: 46px; }
+  .topmenu .el-menu--horizontal .el-menu-item.is-active,
+  .topmenu .el-menu--horizontal .el-menu-item:not(.is-disabled):focus {
+    color: white;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom-color: transparent; }
+  .topmenu .el-menu--horizontal .el-menu-item:not(.is-disabled):hover,
+  .topmenu .el-menu--horizontal .el-submenu .el-submenu__title:hover {
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom-color: transparent; }
+  .topmenu .el-menu--horizontal .el-submenu.is-active {
+    background: rgba(255, 255, 255, 0.1); }
+    .topmenu .el-menu--horizontal .el-submenu.is-active .el-submenu__title {
+      color: rgba(255, 255, 255, 0.8);
+      border-bottom: none; }
+  .topmenu .el-dropdown-menu__item--divided:before {
+    color: rgba(255, 255, 255, 0.8);
+    background: transparent; }
+  .topmenu .icon-home {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url("./img/icon-home.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle; }
+
+.container {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%; }
+  .container .header {
+    min-width: 1270px;
+    height: 46px;
+    line-height: 46px;
+    padding-right: 10px;
+    background: #1687E8;
+    color: #fff; }
+    .container .header .userinfo {
+      text-align: right;
+      padding-right: 10px;
+      float: right; }
+      .container .header .userinfo .userinfo-inner {
+        cursor: pointer;
+        color: #fff; }
+        .container .header .userinfo .userinfo-inner img {
+          width: 30px;
+          height: 30px;
+          border-radius: 20px;
+          margin: 5px 0px 0px 0px;
+          float: right; }
+    .container .header .logo {
+      width: 250px;
+      height: 46px;
+      font-size: 18px;
+      padding-left: 10px; }
+      .container .header .logo .logoimg {
+        width: 34px;
+        height: 34px;
+        float: left;
+        margin: 5px 10px 0px 0px;
+        background: url("./img/logo.png") no-repeat; }
+      .container .header .logo .txt {
+        color: #fff; }
+    .container .header .logo-width {
+      width: 250px; }
+    .container .header .logo-collapse-width {
+      width: 60px; }
+    .container .header .tools {
+      padding: 0 10px;
+      line-height: 46px;
+      cursor: pointer;
+      display: none; }
+    .container .header .el-dropdown {
+      cursor: pointer;
+      color: #fff;
+      line-height: 23px; }
+  .container .main {
+    display: flex;
+    position: absolute;
+    top: 46px;
+    bottom: 0px;
+    height: calc(100vh - 46px);
+    overflow: hidden; }
+    .container .main aside {
+      flex: 0 0 249px;
+      width: 249px;
+      border-right: solid 1px #e6e6e6;
+      background: #f2f2f2; }
+      .container .main aside .el-menu {
+        border-right: 0;
+        background: #f2f2f2; }
+      .container .main aside .collapsed {
+        width: 59px; }
+        .container .main aside .collapsed .item {
+          position: relative; }
+        .container .main aside .collapsed .submenu {
+          position: absolute;
+          top: 0px;
+          left: 60px;
+          z-index: 99999;
+          height: auto;
+          display: none;
+          box-shadow: 0px 2px 4px #ccc; }
+      .container .main aside .menu-search-tool {
+        padding: 10px 0 10px 10px; }
+        .container .main aside .menu-search-tool .el-input {
+          width: 185px;
+          display: inline-block; }
+        .container .main aside .menu-search-tool .tools {
+          width: 28px;
+          height: 28px;
+          line-height: 28px;
+          margin-left: 10px;
+          text-align: center;
+          display: inline-block;
+          cursor: pointer; }
+      .container .main aside .menu-search-tool.no {
+        padding: 10px 0; }
+        .container .main aside .menu-search-tool.no .el-input {
+          display: none; }
+        .container .main aside .menu-search-tool.no .tools {
+          margin-left: 0;
+          height: 100%;
+          width: 100%; }
+    .container .main .menu-collapsed {
+      flex: 0 0 60px;
+      width: 60px; }
+    .container .main .menu-expanded {
+      flex: 0 0 249px;
+      width: 249px;
+      overflow-y: auto; }
+    .container .main .content {
+      flex: 1;
+      width: 0;
+      height: 0; }
+      .container .main .content .content-container {
+        overflow: auto;
+        padding: 0 10px; }
+        .container .main .content .content-container .breadcrumb-container .title {
+          width: 200px;
+          float: left;
+          color: #475669; }
+        .container .main .content .content-container .breadcrumb-container .breadcrumb-inner {
+          float: right; }
+        .container .main .content .content-container .content-wrapper {
+          padding-bottom: 10px;
+          overflow: hidden; }
+        .container .main .content .content-container .grid-content {
+          min-width: 1000px;
+          overflow-x: auto; }
+
+.loginMain {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 230px;
+  padding-left: 420px;
+  margin: -150px 0 0 -411px;
+  background: #2D54A6;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-clip: padding-box;
+  box-shadow: 0 0 25px #cac6c6;
+  border: 1px solid #eaeaea; }
+  .loginMain:before {
+    position: absolute;
+    top: 55px;
+    left: 50px;
+    content: '';
+    height: 200px;
+    width: 200px;
+    background: url("./img/dl-bg.png") no-repeat center center;
+    opacity: .6; }
+  .loginMain .login-logo {
+    position: absolute;
+    top: -48px;
+    left: 10px;
+    line-height: 34px; }
+    .loginMain .login-logo:before {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 8px;
+      content: '';
+      height: 34px;
+      width: 34px;
+      background: url("./img/logo-dl.png") no-repeat center center; }
+    .loginMain .login-logo .text {
+      font-size: 22px;
+      padding-left: 10px; }
+  .loginMain .login-container {
+    position: relative;
+    color: #fff;
+    width: 350px;
+    padding: 64px 0 0 60px; }
+    .loginMain .login-container:before {
+      position: absolute;
+      top: 0;
+      left: -3px;
+      content: '';
+      height: 230px;
+      width: 2px;
+      background: url("./img/dl-line.png") no-repeat center center;
+      opacity: .5; }
+    .loginMain .login-container .el-form-item__label {
+      width: 46px;
+      margin-right: 10px;
+      color: #fff !important;
+      text-align: justify;
+      text-justify: distribute-all-lines;
+      /*ie6-8*/
+      text-align-last: justify;
+      /* ie9*/
+      -moz-text-align-last: justify;
+      /*ff*/
+      -webkit-text-align-last: justify;
+      /*chrome 20+*/ }
+      .loginMain .login-container .el-form-item__label:before {
+        display: none; }
+    .loginMain .login-container .el-checkbox__input.is-checked + .el-checkbox__label {
+      color: #fff; }
+    .loginMain .login-container .el-button {
+      width: 64px;
+      height: 28px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      border: none; }
+      .loginMain .login-container .el-button:hover {
+        opacity: .7; }
+    .loginMain .login-container .btn-mg {
+      margin: 10px 0 0 55px; }

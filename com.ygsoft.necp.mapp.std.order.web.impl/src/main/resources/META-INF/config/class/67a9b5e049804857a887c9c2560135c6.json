@@ -1,0 +1,34 @@
+[
+	{
+		"bizState":0,
+		"caption":"商品",
+		"classId":"aa1",
+		"createDate":"2022-09-19 14:46:50",
+		"domainId":"67a9b5e049804857a887c9c2560135c6",
+		"gid":"fe9fb6ddc1ec484dc7cefa82fd13216e",
+		"modelState":0,
+		"stop":0
+	},
+	{
+		"bizState":0,
+		"caption":"销售订单2",
+		"classId":"aa",
+		"createDate":"2022-09-19 14:46:05",
+		"domainId":"67a9b5e049804857a887c9c2560135c6",
+		"gid":"e966a3b7796c3d3e37f0407b02743812",
+		"modelState":0,
+		"parentId":"0c99463192337b0429c38653b275a9cc",
+		"rootId":"0c99463192337b0429c38653b275a9cc",
+		"stop":0
+	},
+	{
+		"bizState":0,
+		"caption":"销售订单",
+		"classId":"sellorder1",
+		"createDate":"2022-09-19 14:42:31",
+		"domainId":"67a9b5e049804857a887c9c2560135c6",
+		"gid":"0c99463192337b0429c38653b275a9cc",
+		"modelState":0,
+		"stop":0
+	}
+]

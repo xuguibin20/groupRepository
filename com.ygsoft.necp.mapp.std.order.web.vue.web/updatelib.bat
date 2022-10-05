@@ -1,0 +1,6 @@
+echo off
+@echo set %NPM_PATH%
+@echo update lib...
+xcopy %NPM_PATH%\..\..\Project\lib\ecp\*.* %~dp0lib\ecp\ /s /e /c /y /h /r
+@echo update ecpconfig...
+xcopy %NPM_PATH%\..\..\Project\ecpconfig\*.* %~dp0ecpconfig\ /s /e /c /y /h /r

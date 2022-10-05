@@ -1,0 +1,141 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>${templateModel.getGroupId()}</groupId>
+  <artifactId>null.vue.web</artifactId>
+  <name>com.ygsoft.necp.mapp.std.order.web.vue.web</name>
+  <version>${templateModel.getVersion()}</version>
+  <packaging>jar</packaging>
+  <url>http://maven.apache.org</url>
+
+    <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+	<parent>
+		<groupId>com.ygsoft.necp</groupId>
+		<artifactId>necp.parent</artifactId>
+		<version>6.8.1</version>
+	</parent>
+
+  <profiles>
+    <profile>
+      <id>window</id>
+      <properties>
+        <npm>npm.cmd</npm>
+      </properties>
+    </profile>
+    <profile>
+      <id>linux</id>
+      <properties>
+        <npm>npm</npm>
+      </properties>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+  </profiles>
+
+
+ <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <executions>
+        
+        
+          <execution>
+            <id>exec-npm-install-unsafe</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <executable>${npm}</executable>
+              <arguments>
+                <argument>i</argument>
+                <argument>--unsafe-perm</argument>
+              </arguments>
+              <workingDirectory>${basedir}</workingDirectory>
+            </configuration>
+          </execution>
+        
+          <execution>
+            <id>exec-npm-config</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <executable>${npm}</executable>
+              <arguments>
+                <argument>config</argument>
+                <argument>set</argument>
+                <argument>registry=http://124.71.21.236:8081/repository/npm-ygsoft/</argument>
+              </arguments>
+              <workingDirectory>${basedir}</workingDirectory>
+            </configuration>
+          </execution>
+        
+          <execution>
+            <id>exec-npm-install</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <executable>${npm}</executable>
+              <arguments>
+                <argument>install</argument>
+              </arguments>
+              <workingDirectory>${basedir}</workingDirectory>
+            </configuration>
+          </execution>
+
+          <execution>
+            <id>exec-npm-run-build</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <executable>${npm}</executable>
+              <arguments>
+                <argument>run</argument>
+                <argument>build</argument>
+              </arguments>
+              <workingDirectory>${basedir}</workingDirectory>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      
+       <plugin>
+            <artifactId>maven-resources-plugin</artifactId>
+            <version>3.1.0</version>
+            <executions>
+                <execution>
+                    <id>copy-resource-one</id>
+                    <phase>install</phase>
+                    <goals>
+                        <goal>copy-resources</goal>
+                    </goals>
+
+                    <configuration>
+                        <outputDirectory>${basedir}/../com.ygsoft.necp.mapp.std.order.web.web/WebContent/necp/mapp/com.ygsoft.necp.mapp.std.order.webweb/page</outputDirectory>
+                        <resources>
+                            <resource>
+                                <directory>dist/</directory>
+                                <filtering>true</filtering>
+                            </resource>
+                        </resources>
+                    </configuration>
+                </execution>
+           </executions>
+        </plugin>
+      
+    </plugins>
+  </build>
+
+</project>

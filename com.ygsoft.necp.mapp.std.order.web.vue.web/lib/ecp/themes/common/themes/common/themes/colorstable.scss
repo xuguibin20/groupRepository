@@ -1,0 +1,121 @@
+/**
+ * 标准风格色值表
+ */
+
+/* 主色和焦点色（含不同的透明度） */
+$color-primary: #1687E8;
+$color-primary-opacity1: rgba(22,135,232,.1);
+$color-primary-opacity3: rgba(22,135,232,.3);
+$color-primary-opacity4: rgba(22,135,232,.4);
+$color-primary-opacity6: rgba(22,135,232,.6);
+$color-primary-opacity9: rgba(22,135,232,.9);
+
+/* 文字颜色 */
+$color-font: #162b41; // 常规字体颜色
+$color-font-light: #8d9aa9; //弱化字颜色
+$color-font-assist: #8d9aa9; //辅助信息字颜色
+$color-font-button: #1687E8; //文字按钮颜色
+$color-input-tips: #7b8ea2; //输入框提示字颜色
+$color-icon: #ADB8C3; //字符图标颜色
+
+/* 字重 */
+$font-weight-regular: 400; // 常规字重
+$font-weight-medium: 500; // 表头、标题字重
+$font-weight-bold: 700; // 加粗字重
+
+/* 字号 */
+$font-size-xs: 12px; // 弱化字号
+$font-size-base: 14px; // 正文字号
+$font-size-md: 16px; // 标题字号
+
+/* 行高 */
+$line-heigth-base: 1.5; // 常规行高
+$line-heigth-section: 1.7; // 段落行高
+
+/* 圆角 */
+$border-radius-sm: 2px;
+
+/* 外间距 */
+$margin-sm: 8px;
+$margin-md: 16px;
+$margin-lg: 24px;
+
+/* 内间距 */
+$padding-sm: 8px;
+$padding-md: 16px;
+$padding-lg: 24px;
+
+/* 投影 */
+$box-shadow-popper: 0 2px 8px rgba(0,0,0,.08);
+$box-shadow-popover: 0 2px 8px rgba(170,180,201,.4);
+
+/* 左侧二级导航 */
+$color-navs-bg: #505769; //底色
+$color-navs-bg-focus: #383D47; //选中底色
+$color-navs-icon: #9DA4B3; //正常图标颜色
+$color-navs-icon-focus: #549DDA; //选中图标颜色
+
+/* 页签 */
+$color-tabs-bg: #f7f7f7; //未选中背景色
+$color-tabs-bg-focus: #FFFFFF; //选中背景色
+$color-tabs-font: #162B41; //未选中字颜色
+$color-tabs-font-focus: #162b41; //选中字颜色
+
+/* 线框 */
+$color-border: #dce1ea; //线框色
+$color-border-focus: #1687E8; //线框焦点色
+
+/* 全局工具栏 */
+$color-tools-bg: #F0F3F7; //底色
+
+/* 表格 */
+$color-table-bg-cross: #F5F5F5; //斑马底色
+$color-table-bg-focus: #E5F2FF; //选中行底色
+$color-table-border-focus: #1687E8; //选中框颜色
+
+/* 表单 */
+$input-bg: #EBF0F5;
+$input-bg-hover: #EBF0F5;
+$input-bg-focus: #EBF0F5;
+$input-bg-disabled: #F7F9FB;
+$input-border: transparent;
+$input-border-hover: #9CBEE2;
+$input-border-focus: #9CBEE2;
+$button-primary-hover: #439CE8;
+$button-primary-active: #1378CF;
+
+/* 其他 */
+$color-success: #4AAD8F;
+$color-warn: #f0760c;
+$color-error: #e5524c;
+$color-process:#008be8;
+$color-finish:#69CFA1;
+$color-wait:#b8b8b8;
+
+$color-white: #fff;
+$color-grayA: #AAA;
+$color-grayB: #BBB;
+$color-grayC: #CCC;
+$color-grayD: #DCE1EA;
+$color-grayF2:#f2f2f2;
+$color-grayF5:#f5f5f5;
+$color-black3:#333;
+$color-black6:#666;
+$color-black9:#999;
+
+$color-primary-disabled: #7fa0e6;
+$color-button-disabled: #F0F3F7;
+$color-button-border-focus: #B3D3EF;
+$color-text-disabled: #A1B0BF;
+$color-current-hover:#EAEEF6;
+
+$color-background-focus: #B4C0DC;
+$color-tab-bordercard-back: #E9EAED;
+$color-tab-bordercard-text: #909399;
+$color-checkbox-normal: #DCDFE6;
+
+$color-border-normal: #E4E4E4;
+$color-datepicker-back: #E5F2FF;
+$color-tips-success: #00A500;
+$color-tips-warning: #FF6400;
+$color-tips-error: #FF6400;

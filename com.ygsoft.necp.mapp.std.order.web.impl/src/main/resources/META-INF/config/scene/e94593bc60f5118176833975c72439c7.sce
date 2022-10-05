@@ -1,0 +1,21 @@
+{
+	"bizState":0,
+	"caption":"商品列表",
+	"classId":"aa1",
+	"curVersion":"",
+	"description":"",
+	"domainId":"67a9b5e049804857a887c9c2560135c6",
+	"ecpEntity":false,
+	"ecpSceneBh":"",
+	"fullDc":false,
+	"functionId":"",
+	"gid":"9aa28d3ceb75443451c9f833550077b2",
+	"level":-1,
+	"modelState":0,
+	"parentId":"",
+	"projectId":"ad6968005361b2d6f8dc983f95dea05b",
+	"sceneId":"e94593bc60f5118176833975c72439c7",
+	"type":0,
+	"typeId":"orderinfo1",
+	"useCaseId":""
+}

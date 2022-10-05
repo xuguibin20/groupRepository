@@ -1,0 +1,16 @@
+{
+    "uni-app": {
+        "scripts": {
+            "tswan": "npm install necp.tswan.mobile.components -dev-save",
+            "tflow": "npm install necp.tflow.mobile.components -dev-save",
+            "date-fns": "npm install date-fns -dev-save",
+            "registry": "npm config set registry http://ygsoft-npm.ygsoft.com/repository/ygsoft-npm/"
+            }
+    },
+    "dependencies": {
+        "date-fns": "^2.14.0",
+        "necp.tflow.mobile.components": "6.8.1-2",
+        "necp.tswan.mobile.components": "^7.0.0-M8",
+        "uni-request": "^1.0.2"
+    }
+}

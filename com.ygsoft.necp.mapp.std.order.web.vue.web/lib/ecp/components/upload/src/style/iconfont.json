@@ -1,0 +1,30 @@
+{
+  "id": "2023709",
+  "name": "Xlead",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "16742259",
+      "name": "pdf",
+      "font_class": "pdf",
+      "unicode": "e868",
+      "unicode_decimal": 59496
+    },
+    {
+      "icon_id": "16742260",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e869",
+      "unicode_decimal": 59497
+    },
+    {
+      "icon_id": "16742261",
+      "name": "文档",
+      "font_class": "wendang",
+      "unicode": "e86a",
+      "unicode_decimal": 59498
+    }
+  ]
+}

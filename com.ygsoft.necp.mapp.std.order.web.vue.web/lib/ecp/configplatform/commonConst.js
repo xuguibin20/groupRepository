@@ -1,0 +1,23 @@
+export default {
+  SOURCE: 'server',
+  WAIT: 'wait',
+  CHECK: 'check',
+  TO: 'init',
+  CODE: 'code',
+  LOAD: 'load',
+  PARAMS: 'params',
+  COMID: 'comid',
+  VCOM: 'v-com',
+  VBEFORE: 'v-before',
+  VAFTER: 'v-after',
+  VREPLACE: 'v-replace',
+  VDELETE: 'v-delete',
+  DO: 'action',
+  EVENT: 'event',
+  TRIGGER: 'trigger',
+  MESSAGE: 'message',
+  DEFAULTVALUE: 'defValue',
+  DEFAULTINDEX: 'defIndex',
+  COMPONENT: 'component',
+  COMTYPE: 'comtype'
+}

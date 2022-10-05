@@ -1,0 +1,703 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'SourceHanSans';
+  src: url("../fonts/SourceHanSansSC.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Microsoft YaHei','SourceHanSans','Arial',' Helvetica Neue', 'Helvetica',  'SimSun', 'sans-serif';
+  font-size: 14px;
+  color: #444;
+  -webkit-font-smoothing: antialiased; }
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 8px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 10px; }
+
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  background: rgba(204, 204, 204, 0.5); }
+
+::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  border-radius: 0px; }
+
+.app-scss {
+  /* 重置小号按钮 */
+  /* 重置表格行高 */
+  /* 重置表单样式 查询区 */
+  /*页面底部工具栏*/
+  /*右侧小箭头颜色*/
+  /*点击后边线颜色*/
+  /*收起按钮*/
+  /*子表样式*/
+  /*即时搜索*/
+  /*非即时查询*/
+  /*选项卡底线*/
+  /*步骤条*/
+  /*页签导航*/
+  /*单屏页面*/
+  /*重定义导航下拉*/
+  /*表格分页工具条*/
+  /*重置选项卡*/
+  /*重置Collapse 折叠面板*/
+  /*重置时间控件*/
+  /*时间控件图标居右*/
+  /*直角*/
+  /*局部工具栏*/
+  /*/ 多选下拉 处理折行问题
+.slect-multiple{
+  .el-tag--info{
+    display: flex;
+    &:first-child{
+      max-width: 100%;
+      .el-select__tags-text {
+        max-width: 86%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    &:nth-last-child(2) {
+      max-width: 70%;
+    }
+    .el-tag__close{
+      top: 4px;
+    }
+  }
+}*/ }
+  .app-scss .el-checkbox__input.is-indeterminate .el-checkbox__inner::before {
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    height: 10px;
+    transform: none; }
+  .app-scss .el-radio.is-checked:not(.is-disabled) .el-radio__inner:after {
+    width: 5px;
+    height: 5px; }
+  .app-scss .toolbar {
+    padding: 10px 0 0 10px;
+    margin-bottom: 10px;
+    background: rgba(204, 204, 204, 0.2); }
+  .app-scss .el-button--default {
+    border-color: #cccccc; }
+  .app-scss .text-button {
+    color: #333; }
+  .app-scss .el-table--group,
+  .app-scss .el-table--border {
+    border-color: #ddd; }
+  .app-scss .el-table .caret-wrapper {
+    height: 20px; }
+    .app-scss .el-table .caret-wrapper .sort-caret.descending {
+      bottom: 0; }
+    .app-scss .el-table .caret-wrapper .sort-caret.ascending {
+      top: -3px; }
+  .app-scss .el-menu-item,
+  .app-scss .el-submenu__title {
+    height: 40px;
+    line-height: 40px; }
+  .app-scss .el-menu .el-submenu .el-menu-item {
+    height: 40px;
+    line-height: 40px; }
+  .app-scss .el-table__footer td .cell {
+    font-weight: bold; }
+  .app-scss .el-form-item__label {
+    padding-right: 0; }
+  .app-scss .el-input__inner {
+    padding: 0 8px;
+    border-radius: 0px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    border-color: #cccccc; }
+  .app-scss .el-input--prefix .el-input__inner {
+    padding-left: 30px; }
+  .app-scss .el-textarea__inner {
+    border-radius: 2px;
+    padding: 0 8px; }
+  .app-scss .queryLayout .el-input-number--mini .el-input__inner {
+    width: 100%; }
+  .app-scss .queryLayout .combox .el-select__tags {
+    max-width: 100% !important; }
+  .app-scss .queryLayout .el-form-item__content .line {
+    padding-left: 6px;
+    text-align: center;
+    color: #606266; }
+  .app-scss .queryLayout .el-form-item--mini.el-form-item,
+  .app-scss .queryLayout .el-form-item--small.el-form-item {
+    margin-bottom: 8px; }
+  .app-scss .queryLayout .el-input--prefix .el-input__prefix {
+    right: 5px; }
+  .app-scss .moreQueryBtn {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+    height: 15px;
+    padding: 0;
+    text-align: center;
+    background: #f5f5f5;
+    border: none; }
+    .app-scss .moreQueryBtn:hover, .app-scss .moreQueryBtn:focus {
+      border: none;
+      background: #f2f2f2; }
+  .app-scss .el-form-item--mini.el-form-item {
+    margin-bottom: 10px; }
+  .app-scss .toolsbottom-pd {
+    padding-top: 115px; }
+  .app-scss .tools-bottom {
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    left: 260px;
+    height: 30px;
+    padding: 5px 20px;
+    z-index: 100; }
+    .app-scss .tools-bottom .text1 {
+      margin-right: 10px; }
+      .app-scss .tools-bottom .text1:focus {
+        outline: none; }
+      .app-scss .tools-bottom .text1 .nb {
+        color: #f39700; }
+  .app-scss .taglist .el-tag {
+    margin: 3px; }
+  .app-scss .main.full .tools-bottom {
+    left: 70px; }
+  .app-scss .el-message-box__btns,
+  .app-scss .el-dialog__footer {
+    padding: 5px 10px 6px;
+    border-top: 1px solid #e5e5e5; }
+    .app-scss .el-message-box__btns .el-button--small,
+    .app-scss .el-dialog__footer .el-button--small {
+      padding: 6px 15px;
+      font-size: 14px; }
+  .app-scss.el-message-box {
+    padding-bottom: 0;
+    font-size: 14px; }
+  .app-scss .el-message-box__input {
+    padding-top: 5px; }
+  .app-scss .el-form-item.is-error .el-input__validateIcon {
+    color: #FF9900; }
+  .app-scss .el-form-item__error {
+    color: #fff;
+    font-size: 12px;
+    line-height: 1;
+    position: absolute;
+    bottom: -8px;
+    top: unset;
+    left: 0;
+    border-radius: 2px;
+    background-color: #FF9900;
+    padding: 2px 4px;
+    z-index: 1; }
+  .app-scss .el-collapse-item__arrow {
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    border: 1px solid #BBB;
+    border-radius: 50%; }
+  .app-scss .el-collapse-item__header.is-active {
+    border-bottom-color: #ebeef5; }
+  .app-scss .queryLayoutBox {
+    position: relative;
+    padding-bottom: 20px; }
+  .app-scss .fr {
+    float: right; }
+  .app-scss .sonTableBox {
+    padding: 10px 10px 30px;
+    background: rgba(204, 204, 204, 0.2);
+    box-shadow: inset 0 0 6px rgba(161, 161, 161, 0.5); }
+  .app-scss .el-input--prefix .el-input__prefix {
+    font-size: 14px; }
+  .app-scss .search-right input {
+    padding-left: 5px;
+    padding-right: 25px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .app-scss .search-right .el-input-group__append,
+  .app-scss .search-right .el-input-group__prepend {
+    padding: 0 15px;
+    border-color: #ccc;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px; }
+  .app-scss .el-tabs__active-bar {
+    height: 2px; }
+  .app-scss .el-tabs__nav-wrap::after {
+    height: 1px;
+    background-color: #DCE1EA; }
+  .app-scss .listTable-layout {
+    width: 280px; }
+    .app-scss .listTable-layout .el-table th {
+      padding: 0; }
+      .app-scss .listTable-layout .el-table th > .cell {
+        line-height: 1;
+        text-align: left;
+        font-weight: 500; }
+        .app-scss .listTable-layout .el-table th > .cell span {
+          display: inline-block;
+          vertical-align: middle; }
+          .app-scss .listTable-layout .el-table th > .cell span.el-checkbox__input {
+            margin: 13px 0 11px; }
+        .app-scss .listTable-layout .el-table th > .cell span + .el-input--mini {
+          width: 80%;
+          vertical-align: middle; }
+      .app-scss .listTable-layout .el-table th > .cell .el-input {
+        padding-left: 0;
+        padding-right: 0; }
+    .app-scss .listTable-layout .el-table td {
+      padding: 5px 0;
+      border: none; }
+  .app-scss .progressCircle .el-step {
+    margin-top: 100px; }
+    .app-scss .progressCircle .el-step .el-step__icon-inner[class*=el-icon]:not(.is-status) {
+      border-radius: 50%;
+      font-size: 100px;
+      background: #fff; }
+    .app-scss .progressCircle .el-step .el-step__title {
+      font-size: 28px;
+      line-height: 68px; }
+  .app-scss .el-steps--simple.step-stuts {
+    border-radius: 46px;
+    overflow: hidden; }
+    .app-scss .el-steps--simple.step-stuts .el-step__arrow::before {
+      transform: rotate(-45deg) translateY(-8px);
+      height: 35px;
+      width: 4px;
+      background: #fff; }
+    .app-scss .el-steps--simple.step-stuts .el-step__arrow::after {
+      transform: rotate(45deg) translateY(12px);
+      height: 35px;
+      width: 4px;
+      background: #fff; }
+  .app-scss .tag-group .el-tag + .el-tag {
+    margin-left: 5px; }
+  .app-scss .tag-group .el-tag {
+    position: relative;
+    max-width: 226px;
+    padding: 0 20px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .app-scss .tag-group .el-tag .el-icon-close {
+      position: absolute;
+      top: 6px;
+      right: 5px;
+      width: 0;
+      overflow: hidden; }
+    .app-scss .tag-group .el-tag:hover {
+      padding: 0 28px 0 12px; }
+      .app-scss .tag-group .el-tag:hover .el-icon-close {
+        width: 16px; }
+  .app-scss .tag-group .el-button-group {
+    padding: 0 8px; }
+  .app-scss .tag-group .el-button-group, .app-scss .tag-group .el-dropdown {
+    vertical-align: top; }
+  .app-scss .warn-tips.el-alert--info {
+    background: none;
+    color: #333; }
+  .app-scss .warn-tips-plus.el-alert--info {
+    background: none;
+    color: #F39700; }
+  .app-scss .slidetable-container {
+    position: relative;
+    height: 300px;
+    border: 1px solid #ccc;
+    overflow: hidden; }
+    .app-scss .slidetable-container .slide-open {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      top: 0;
+      right: 0;
+      transition: all .4s ease-in-out;
+      z-index: 100;
+      padding: 0; }
+      .app-scss .slidetable-container .slide-open .close-icon {
+        float: left;
+        width: 20px;
+        height: 100%;
+        color: #000;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: #E0E0E0;
+        cursor: pointer; }
+        .app-scss .slidetable-container .slide-open .close-icon i {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          margin-top: -10px;
+          color: #333; }
+        .app-scss .slidetable-container .slide-open .close-icon:hover {
+          opacity: .8; }
+    .app-scss .slidetable-container .slide-close {
+      position: absolute;
+      width: 0px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-color: #f2f2f2;
+      transition: all .4s ease-in-out;
+      overflow: hidden; }
+    .app-scss .slidetable-container .slide-button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 20px;
+      background: #ccc; }
+  .app-scss .combox {
+    box-sizing: border-box;
+    height: 28px;
+    line-height: 28px; }
+    .app-scss .combox .el-input__suffix .el-icon-arrow-up:after,
+    .app-scss .combox .el-input__suffix .el-icon-arrow-up:before {
+      visibility: hidden; }
+    .app-scss .combox .el-select__tags {
+      max-width: 100%; }
+    .app-scss .combox .el-button {
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      height: 26px;
+      padding: 6px 10px;
+      border-radius: 0;
+      border: none;
+      font-size: 14px; }
+    .app-scss .combox .el-input__inner {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+  .app-scss .required {
+    color: #ff0000;
+    margin-right: 3px;
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle; }
+  .app-scss .el-switch .el-switch__core {
+    background: #fff; }
+    .app-scss .el-switch .el-switch__core:after {
+      left: 0;
+      border: 1px solid transparent; }
+  .app-scss .el-switch.is-checked .el-switch__core:after {
+    left: 100%; }
+  .app-scss .el-switch.is-disabled .el-switch__core {
+    background: #dcdfe6; }
+  .app-scss .upload-dialog .el-form-item {
+    margin-bottom: 5px; }
+  .app-scss .el-upload__tip {
+    font-size: 14px;
+    color: #999;
+    margin: 7px 0 0 5px; }
+    .app-scss .el-upload__tip i {
+      margin-left: 5px; }
+  .app-scss .el-upload-card {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ebeef5;
+    background-color: #fff;
+    max-height: 150px;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: 0.3s; }
+    .app-scss .el-upload-card p {
+      margin: 0 0 8px 0;
+      line-height: initial; }
+      .app-scss .el-upload-card p:last-child {
+        margin-bottom: 0; }
+  .app-scss .el-menu--horizontal .el-menu .el-menu-item,
+  .app-scss .el-menu--horizontal .el-menu .el-submenu__title {
+    color: #666; }
+    .app-scss .el-menu--horizontal .el-menu .el-menu-item i,
+    .app-scss .el-menu--horizontal .el-menu .el-submenu__title i {
+      color: #fff; }
+  .app-scss .el-menu--horizontal > .el-submenu:focus .el-submenu__title {
+    color: #fff; }
+    .app-scss .el-menu--horizontal > .el-submenu:focus .el-submenu__title i {
+      color: #fff; }
+  .app-scss .el-menu--horizontal > .el-submenu .el-submenu__title i {
+    color: #fff; }
+  .app-scss .pagination-toolbar {
+    padding: 5px 0; }
+  .app-scss .collapse-group {
+    border-bottom: 0;
+    border-top: 0;
+    /*分组色块左边线*/ }
+    .app-scss .collapse-group .el-collapse-item > div:first-child > div,
+    .app-scss .collapse-group .collapseTitle-no {
+      position: relative;
+      padding-left: 10px; }
+      .app-scss .collapse-group .el-collapse-item > div:first-child > div:before,
+      .app-scss .collapse-group .collapseTitle-no:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 4px;
+        top: 7px;
+        height: 14px;
+        background: #0e8c85; }
+    .app-scss .collapse-group .el-collapse-item__header,
+    .app-scss .collapse-group .collapseTitle-no {
+      height: 28px;
+      line-height: 28px; }
+    .app-scss .collapse-group .el-collapse-item__wrap {
+      border-bottom: 0; }
+    .app-scss .collapse-group .collapseTitle-no {
+      border-bottom: 1px solid #ebeef5; }
+  .app-scss .el-date-table td {
+    height: 5px;
+    padding: 0;
+    font-size: 14px; }
+  .app-scss .el-date-table th {
+    padding: 0 5px; }
+  .app-scss .el-date-picker .el-picker-panel__content {
+    width: 313px;
+    margin: 0 5px; }
+  .app-scss .el-date-editor--daterange .el-range-input {
+    width: 50%; }
+  .app-scss .el-date-editor--daterange.el-input__inner {
+    width: 100%;
+    padding: 3px 8px; }
+  .app-scss .el-date-picker__header {
+    margin: 5px 5px 0px 5px;
+    padding-bottom: 5px; }
+  .app-scss .el-date-picker__header-label {
+    font-size: 14px; }
+  .app-scss .el-month-table td,
+  .app-scss .el-year-table td {
+    padding: 10px 3px;
+    font-size: 14px; }
+  .app-scss .el-range-editor--mini .el-range-input {
+    font-size: 14px; }
+  .app-scss .el-date-editor .el-input__prefix {
+    left: auto;
+    right: 0px; }
+  .app-scss .el-date-editor .el-input__inner {
+    padding-left: 8px; }
+  .app-scss .el-date-editor .el-input__suffix {
+    right: 15px; }
+  .app-scss .el-date-editor .el-range-separator {
+    line-height: 26px; }
+  .app-scss .el-upload__list ul {
+    list-style: none;
+    padding-left: 70px; }
+    .app-scss .el-upload__list ul li {
+      height: 28px;
+      padding-left: 5px; }
+      .app-scss .el-upload__list ul li:hover {
+        background: rgba(204, 204, 204, 0.2); }
+        .app-scss .el-upload__list ul li:hover i {
+          cursor: pointer;
+          visibility: visible; }
+        .app-scss .el-upload__list ul li:hover .el-upload__title {
+          color: #007873; }
+      .app-scss .el-upload__list ul li span {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-right: 5px; }
+        .app-scss .el-upload__list ul li span i {
+          visibility: hidden; }
+      .app-scss .el-upload__list ul li .el-upload__title {
+        min-width: 220px; }
+      .app-scss .el-upload__list ul li .el-upload__time {
+        min-width: 100px; }
+  .app-scss .el-step__main .el-step__title {
+    font-size: 14px; }
+  .app-scss .step-content {
+    border: 1px solid #ccc;
+    height: calc(100vh - 270px);
+    padding: 0 10px; }
+  .app-scss .stepContainer + .tools-bottom {
+    bottom: 0;
+    right: 0; }
+  .app-scss .el-date-editor.el-input {
+    width: 100%; }
+  .app-scss .el-date-editor .el-range__icon {
+    position: absolute;
+    right: 0; }
+  .app-scss .tips-words {
+    padding: 0px;
+    color: #333; }
+    .app-scss .tips-words.hasdetail {
+      padding: 0px; }
+    .app-scss .tips-words .toolBtn {
+      margin-top: 10px; }
+      .app-scss .tips-words .toolBtn .el-button {
+        padding-left: 0; }
+    .app-scss .tips-words .detail-box {
+      height: 100px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      overflow: hidden; }
+      .app-scss .tips-words .detail-box p {
+        margin: 5px auto;
+        font-size: 12px; }
+    .app-scss .tips-words .el-row {
+      margin-bottom: 0; }
+  .app-scss .dialog-words {
+    padding: 10px 0; }
+  .app-scss .border-radius-none {
+    border-radius: 0; }
+    .app-scss .border-radius-none .el-input__inner {
+      border-radius: 0; }
+  .app-scss .toolbar-group .el-checkbox-group {
+    line-height: 28px;
+    margin-right: 10px; }
+    .app-scss .toolbar-group .el-checkbox-group .el-checkbox {
+      margin-right: 20px; }
+      .app-scss .toolbar-group .el-checkbox-group .el-checkbox:last-child {
+        margin-right: 0; }
+  .app-scss .el-table--mini {
+    font-size: 14px; }
+  .app-scss .noBottom {
+    margin-bottom: 0; }
+  .app-scss .navTabList {
+    padding-right: 128px;
+    height: 34px;
+    line-height: 34px;
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    font-size: 12px; }
+    .app-scss .navTabList .nt-ul {
+      float: left;
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .app-scss .navTabList .nt-ul li {
+        height: 100%;
+        padding: 0 20px;
+        display: inline-block;
+        color: #999;
+        position: relative;
+        cursor: pointer;
+        white-space: nowrap; }
+        .app-scss .navTabList .nt-ul li:before {
+          content: '';
+          width: 1px;
+          height: 23px;
+          position: absolute;
+          left: 0;
+          top: 7px;
+          border-right: 1px solid #e4e4e4; }
+        .app-scss .navTabList .nt-ul li:first-child:before {
+          display: none; }
+        .app-scss .navTabList .nt-ul li i {
+          position: relative;
+          font-size: 12px;
+          width: 0;
+          height: 14px;
+          vertical-align: middle;
+          line-height: 15px;
+          overflow: hidden;
+          top: -1px;
+          right: -10px; }
+        .app-scss .navTabList .nt-ul li:hover {
+          padding: 0 13px; }
+          .app-scss .navTabList .nt-ul li:hover i {
+            width: 14px; }
+        .app-scss .navTabList .nt-ul li a {
+          display: inline-block;
+          color: #999; }
+      .app-scss .navTabList .nt-ul .is-active {
+        padding: 0 13px;
+        margin-top: 2px;
+        height: 33px;
+        line-height: 29px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        background: #fff;
+        font-weight: bold; }
+        .app-scss .navTabList .nt-ul .is-active:before {
+          display: none; }
+        .app-scss .navTabList .nt-ul .is-active + li:before {
+          display: none; }
+        .app-scss .navTabList .nt-ul .is-active i {
+          width: 14px; }
+    .app-scss .navTabList .navTab_right {
+      position: absolute;
+      right: 0;
+      line-height: normal;
+      padding: 6px 10px;
+      background: #f4f4f4;
+      z-index: 2; }
+      .app-scss .navTabList .navTab_right .el-button-group {
+        vertical-align: top; }
+    .app-scss .navTabList .el-button--mini {
+      font-size: 12px;
+      padding: 4px 6px; }
+  .app-scss .input-with-button .el-input__inner {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .app-scss .input-with-button .el-input-group__append {
+    padding: 0 14px;
+    background-color: #fff;
+    color: #606266;
+    border-color: #ccc; }
+    .app-scss .input-with-button .el-input-group__append:hover, .app-scss .input-with-button .el-input-group__append:focus {
+      color: #00827B;
+      border-color: #b3dad7;
+      background-color: #e6f3f2; }
+    .app-scss .input-with-button .el-input-group__append:active {
+      color: #00756f;
+      border-color: #00756f;
+      outline: none; }
+  .app-scss .input-with-button.is-disabled .el-input-group__append {
+    color: #c0c4cc;
+    background-color: #fff;
+    border-color: #ebeef5; }
+    .app-scss .input-with-button.is-disabled .el-input-group__append .el-button {
+      cursor: not-allowed; }
+  .app-scss .select-search {
+    height: 28px; }
+    .app-scss .select-search .el-select__tags {
+      position: absolute;
+      height: 25px;
+      overflow: hidden; }
+      .app-scss .select-search .el-select__tags:hover {
+        height: auto; }
+  .app-scss .el-input-number .el-input__inner {
+    border-radius: 0; }
+  .app-scss .el-input-number[disabled]:focus {
+    border-color: #dcdfe6; }
+  .app-scss .el-input-number.is-controls-right .el-input__inner {
+    padding-left: 8px;
+    text-align: left; }
+  .app-scss .el-input-number.is-controls-right .el-input-number__increase {
+    border-bottom: none;
+    border-left: none; }
+  .app-scss .el-input-number.is-controls-right .el-input-number__decrease {
+    border-left: none; }
+  .app-scss ~ .is-multiple .el-select-dropdown__item {
+    padding-right: 40px; }
+  .app-scss .el-tree__empty-text {
+    color: #909399;
+    font-size: 14px; }
+  .app-scss .queryDiv {
+    padding-bottom: 0; }
+  .app-scss .el-alert.is-light .el-alert__closebtn {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    background: #ccc;
+    border-radius: 50%; }
+  .app-scss .el-input {
+    font-size: 14px; }
+    .app-scss .el-input .el-icon-circle-check:before {
+      content: "\E79C"; }
+    .app-scss .el-input .el-icon-circle-close:before {
+      content: "\e79d"; }
+  .app-scss .el-form-item.is-required:not(.is-no-asterisk) > .el-form-item__label:before,
+  .app-scss .el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap > .el-form-item__label:before {
+    color: #FF0000;
+    margin-right: 4px; }
+  .app-scss .treeView .el-input + .el-tree.filter-tree {
+    border-top: none; }
